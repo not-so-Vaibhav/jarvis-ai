@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  border-bottom: 1px solid #1e293b;
+  letter-spacing: 2px;
+}
+
+.chat {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  line-height: 1.4;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: #2563eb;
+  color: white;
+}
+
+.message.jarvis {
+  align-self: flex-start;
+  background: #1e293b;
+}
+
+.input-box {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #1e293b;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: white;
+  border-radius: 6px;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+.chat {
+  max-height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.user {
+  text-align: right;
+  color: #4da3ff;
+  margin: 6px 0;
+}
+
+.jarvis {
+  text-align: left;
+  color: #ddd;
+  margin: 6px 0;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
